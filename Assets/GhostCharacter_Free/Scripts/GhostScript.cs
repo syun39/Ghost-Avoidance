@@ -287,7 +287,7 @@ public class GhostScript : MonoBehaviour
         {
             Anim.CrossFade(SurprisedState, 0.1f, 0, 0);
             HP--;
-            HP_text.text = "HP " + HP.ToString();
+            //HP_text.text = "HP " + HP.ToString();
         }
     }
     //---------------------------------------------------------------------
