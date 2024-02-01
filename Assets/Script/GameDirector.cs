@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameDirector : MonoBehaviour
@@ -7,7 +8,8 @@ public class GameDirector : MonoBehaviour
     [SerializeField] GameObject _goal;
     [SerializeField] GameObject _text;
     [SerializeField] GameObject _timer;
-    [SerializeField] float _time = 60.0f;
+    //制限時間
+    [SerializeField] float _timeLimit = 60.0f;
     
     void Start()
     {
@@ -20,9 +22,20 @@ public class GameDirector : MonoBehaviour
     void Update()
     {
         float length = _goal.transform.position.z - _player.transform.position.z;
-        _text.GetComponent<Text>().text = "ゴールまで" + length.ToString("F2") + "m";
+        _text.GetComponent<Text>().text = "ゴールまで" + length.ToString("F1") + "m";
 
-        _time -= Time.deltaTime;
-        _timer.GetComponent<Text>().text = "残り" + _time.ToString("F1") + "秒";
+        _timeLimit -= Time.deltaTime;
+        _timer.GetComponent<Text>().text = "残り" + _timeLimit.ToString("F1") + "秒";
+
+        //制限時間が0になったらゲームオーバーシーンに遷移
+        if (_timeLimit < 0)
+        {
+            ChangeSceneGO();
+        }
+    }
+
+    void ChangeSceneGO()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }

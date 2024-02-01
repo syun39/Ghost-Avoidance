@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class EnemyGenerator : MonoBehaviour
 {
-    [SerializeField] GameObject enemyPrefab;
+    //“G
+    [SerializeField] GameObject _enemyPrefab;
+    //•æ
+    [SerializeField] GameObject _tombPrefab;
     //ŠÔŠÔŠu‚ÌÅ¬’l
     [SerializeField] float _minTime = 2f;
     //ŠÔŠÔŠu‚ÌÅ‘å’l
@@ -23,6 +26,10 @@ public class EnemyGenerator : MonoBehaviour
     {
         //ŠÔŠÔŠu‚ğŒˆ’è‚·‚é
         _interval = GetRandomTime();
+        //•æ‚ğ¶¬
+        GameObject tomb = Instantiate(_tombPrefab);
+        //¶¬êŠ
+        tomb.transform.position = new Vector3(_appearancePositionX,_appearancePositionY,_appearancePositionZ);
     }
 
     void Update()
@@ -34,7 +41,7 @@ public class EnemyGenerator : MonoBehaviour
         if (_time > _interval)
         {
             //enemy¶¬‚·‚é
-            GameObject enemy = Instantiate(enemyPrefab);
+            GameObject enemy = Instantiate(_enemyPrefab);
             //¶¬‚µ‚½“G‚ÌÀ•W‚ğŒˆ’è‚·‚é(
             enemy.transform.position = new Vector3(_appearancePositionX, _appearancePositionY, _appearancePositionZ);
             //Œo‰ßŠÔ‚ğ‰Šú‰»
