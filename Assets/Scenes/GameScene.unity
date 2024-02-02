@@ -2633,7 +2633,7 @@ MonoBehaviour:
   _enemyPrefab: {fileID: 5215540059437822696, guid: 31545f6169c416446b1e41169124af86, type: 3}
   _tombPrefab: {fileID: 1849694135568822, guid: 2e6602961f3b26843893714f5721908b, type: 3}
   _minTime: 5
-  _maxTime: 15
+  _maxTime: 10
   _appearancePositionX: 2.883
   _appearancePositionY: 0
   _appearancePositionZ: 55
@@ -6998,7 +6998,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.13725491, g: 0.13725491, b: 0.13725491, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
