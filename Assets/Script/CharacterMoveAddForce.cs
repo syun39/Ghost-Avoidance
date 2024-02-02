@@ -41,12 +41,4 @@ public class CharacterMoveAddForce : MonoBehaviour
         // 「力を加える」処理は力学的処理なので FixedUpdate で行うこと
         _rb.AddForce(_dir.normalized * _movePower, ForceMode.Force);
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Goal")
-        {
-            Debug.Log("Goal");
-        }
-    }
 }
