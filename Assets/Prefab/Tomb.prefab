@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23759969937772492}
   - component: {fileID: 64237564485254452}
   m_Layer: 0
-  m_Name: GraveType2_Damaged_2
+  m_Name: Tomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
