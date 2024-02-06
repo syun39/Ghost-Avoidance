@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour
     {
         transform.Translate(0, 0, _movementSpeed);
 
-        if (transform.position.z < 3)
+        if (transform.position.z < 0)
         {
             Destroy(gameObject);
         }
