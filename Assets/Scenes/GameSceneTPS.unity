@@ -11161,8 +11161,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 4}
+  m_LocalRotation: {x: 0.15887034, y: 0, z: 0, w: 0.9872995}
+  m_LocalPosition: {x: -0.3703518, y: 3, z: 4.037305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12957,7 +12957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1174497462}
   - component: {fileID: 1174497465}
-  - component: {fileID: 1174497467}
+  - component: {fileID: 1174497466}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -12992,7 +12992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1174497467
+--- !u!114 &1174497466
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13005,10 +13005,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0, z: 0}
-  m_XDamping: 0
-  m_YDamping: 0
-  m_ZDamping: 0
+  m_FollowOffset: {x: 0, y: 3, z: -3}
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 0
@@ -15603,7 +15603,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 1161871088}
+  m_Follow: {fileID: 2062149771}
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
@@ -15631,14 +15631,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425739895}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 4}
+  m_LocalRotation: {x: 0.15887032, y: -0, z: -0, w: 0.98729944}
+  m_LocalPosition: {x: -0.3703518, y: 3, z: 4.037305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1174497462}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18.283, y: 0, z: 0}
 --- !u!43 &1433928018
 Mesh:
   m_ObjectHideFlags: 0
@@ -21329,6 +21329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Latifa V2 Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1372609716213610, guid: 8fb76780e40bf1142ac84afa008dfa0c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4207574260043124, guid: 8fb76780e40bf1142ac84afa008dfa0c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3703518
@@ -21417,7 +21421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a39c779c5ced564696369655e2adab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movePower: 3
+  _movePower: 10
 --- !u!54 &2062149770
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21445,6 +21449,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 36
   m_CollisionDetection: 0
+--- !u!4 &2062149771 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4207574260043124, guid: 8fb76780e40bf1142ac84afa008dfa0c, type: 3}
+  m_PrefabInstance: {fileID: 2062149766}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &2062149773
 BoxCollider:
   m_ObjectHideFlags: 0
