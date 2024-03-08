@@ -7002,7 +7002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca33a609d07952409027f3948a801d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
+  _player: {fileID: 2062149767}
   _goal: {fileID: 2093280853}
   _text: {fileID: 1464438370}
   _timer: {fileID: 691011979}
@@ -15438,7 +15438,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
+  m_LookAt: {fileID: 2062149771}
   m_Follow: {fileID: 2062149771}
   m_Lens:
     FieldOfView: 60.000004
@@ -15467,7 +15467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425739895}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15887032, y: -0, z: -0, w: 0.98729944}
+  m_LocalRotation: {x: 0.15887034, y: -0, z: -0, w: 0.9872995}
   m_LocalPosition: {x: -0.3703518, y: 3, z: 4.037305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -21163,7 +21163,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1372609716213610, guid: 8fb76780e40bf1142ac84afa008dfa0c, type: 3}
       propertyPath: m_Name
-      value: Latifa V2 Prefab
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1372609716213610, guid: 8fb76780e40bf1142ac84afa008dfa0c, type: 3}
       propertyPath: m_TagString
