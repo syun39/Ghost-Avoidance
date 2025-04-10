@@ -11,7 +11,7 @@
 
 ## ゲーム画像
 
-![ガチャ画像](Assets/Image/猫ガチャ.png)
+![タイトル](Assets/Image/GhostAvoidanceTitle.png)
 
 ## プレイ方法
 
