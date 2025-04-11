@@ -18,3 +18,7 @@
 このゲームは、Unityで開発されており、以下のリンク先でプレイできます。
 
 **[Ghost Avoidance](https://unityroom.com/games/ghostavoidance)**
+
+## スクリプト
+
+** **
