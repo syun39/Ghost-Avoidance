@@ -11,6 +11,7 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    // ボタンで使用
     public void SceneLoad(float delaySeconds)
     {
         _timer = delaySeconds;
